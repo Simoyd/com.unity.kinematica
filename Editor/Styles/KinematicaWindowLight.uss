@@ -8,7 +8,7 @@
 }
 
 #gutterToggleMenu {
-    background-image: resource("Packages/com.unity.kinematica/Editor/Images/Tracks.png");
+    background-image: resource("Assets/com.unity.kinematica/Editor/Images/Tracks.png");
 }
 
 #gutterToggleMenu:hover {

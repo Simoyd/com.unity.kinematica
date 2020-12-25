@@ -28,7 +28,7 @@ namespace Unity.Kinematica.Editor
         public AnimationClipListView()
         {
             RegisterCallback<AttachToPanelEvent>(OnAttachToPanel);
-            onSelectionChanged += OnAnimationClipSelectionChanged;
+            onSelectionChange += OnAnimationClipSelectionChanged;
         }
 
         void OnAttachToPanel(AttachToPanelEvent evt)
@@ -85,7 +85,7 @@ namespace Unity.Kinematica.Editor
 
         internal List<TaggedAnimationClip> m_ClipSelection = new List<TaggedAnimationClip>();
 
-        void OnAnimationClipSelectionChanged(List<object> animationClips)
+        void OnAnimationClipSelectionChanged(IEnumerable<object> animationClips)
         {
             m_ClipSelection.Clear();
             foreach (var c in animationClips.Cast<TaggedAnimationClip>())

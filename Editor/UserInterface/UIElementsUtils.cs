@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.UIElements;
+using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Unity.Kinematica.UIElements
@@ -10,7 +11,7 @@ namespace Unity.Kinematica.UIElements
     {
         static Dictionary<FloatField, Tuple<float, float>> k_FloatFieldRanges = new Dictionary<FloatField, Tuple<float, float>>();
 
-        const string PackagePath = "Packages/com.unity.kinematica/Editor/";
+        const string PackagePath = "Assets/com.unity.kinematica/Editor/";
         const string StylesRoot = PackagePath + "Styles/";
         const string TemplateRoot = PackagePath + "Templates/";
 

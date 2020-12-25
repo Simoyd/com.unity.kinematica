@@ -284,13 +284,9 @@ namespace Unity.SnapshotDebugger
             return new Color32(r, g, b, a);
         }
 
-        public static NativeString64 ReadNativeString64(this Buffer buffer)
+        public static FixedString64 ReadFixedString64(this Buffer buffer)
         {
-            NativeString64 str = new NativeString64();
-            str.LengthInBytes = buffer.ReadBlittable<ushort>();
-            str.buffer = buffer.ReadBlittable<Bytes62>();
-
-            return str;
+            return new FixedString64(buffer.ReadString());
         }
 
         /// <summary>
