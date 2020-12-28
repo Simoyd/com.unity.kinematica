@@ -310,7 +310,7 @@ namespace Unity.SnapshotDebugger
 
         public static void Write(this Buffer buffer, FixedString64 value)
         {
-            buffer.Write(value.ToString());
+            buffer.WriteBlittable(value);
         }
 
         /// <summary>

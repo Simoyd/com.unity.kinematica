@@ -286,7 +286,7 @@ namespace Unity.SnapshotDebugger
 
         public static FixedString64 ReadFixedString64(this Buffer buffer)
         {
-            return new FixedString64(buffer.ReadString());
+            return buffer.ReadBlittable<FixedString64>();
         }
 
         /// <summary>
