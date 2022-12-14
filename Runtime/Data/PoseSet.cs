@@ -22,7 +22,7 @@ namespace Unity.Kinematica
         public NativeArray<PoseSequence> sequences;
         public Allocator allocator;
 
-        public FixedString64 debugName;
+        public FixedString64Bytes debugName;
 
         public DebugIdentifier debugIdentifier { get; set; }
 

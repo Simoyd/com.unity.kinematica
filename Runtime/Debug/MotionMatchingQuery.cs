@@ -6,6 +6,6 @@ namespace Unity.Kinematica
     {
         string DebugTitle { get; }
 
-        FixedString64 DebugName { get; }
+        FixedString64Bytes DebugName { get; }
     }
 }
